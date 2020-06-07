@@ -8,7 +8,7 @@
   - multiprocessing,
   - time.
 ***
-Установить библиотеку: pip install <библиотека>
+Установить библиотеки: pip install -r requirements.txt
 ***
 Запуск(для тех кто в танке): python3 main.py
 ***
@@ -24,7 +24,7 @@ Libraries:
   - multiprocessing,
   - time.
 ***
-Install library: pip install \<library>
+Install libraries: pip install -r requirements.txt
 ***
 Launch (for those in the tank): python3 main.py
 ***
