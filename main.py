@@ -27,6 +27,15 @@ def parser():
             sleep(0.2)
         except:
             None
+def threads():
+    try:
+        print(colored("Введите количество потоков: ","magenta"),end="")
+        for i in range(int(input())):
+            Process(target=parser,args=()).start()
+        print(colored("Работа начата...","blue"))
+    except:
+        print(colored("Неверное значение!","red"))
+        threads()
 def date():
     if "date" in listdir("."):
         None
@@ -44,10 +53,4 @@ if __name__=="__main__":
     ██████╦╝██║╚██████╔╝██████╔╝██║░╚═╝░██║╚█████╔╝██║░╚██╗███████╗██║░╚██╗╚██████╔╝██║░░██║░░╚██╔╝░░██║░░██║
     ╚═════╝░╚═╝░╚═════╝░╚═════╝░╚═╝░░░░░╚═╝░╚════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝░╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝
     """)
-    print(colored("Работа начата...","blue"))
-    Process(target=parser,args=()).start()
-    Process(target=parser,args=()).start()
-    Process(target=parser,args=()).start()
-    Process(target=parser,args=()).start()
-    Process(target=parser,args=()).start()
-    Process(target=parser,args=()).start()
+    threads()
