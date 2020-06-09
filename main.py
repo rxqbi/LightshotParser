@@ -29,7 +29,7 @@ def parser():
             None
 def threads():
     try:
-        print(colored("Введите количество потоков: ","magenta"),end="")
+        print(colored("Введите количество потоков(больше 10 - лучше не ставить): ","magenta"),end="")
         for i in range(int(input())):
             Process(target=parser,args=()).start()
         print(colored("Работа начата...","blue"))
