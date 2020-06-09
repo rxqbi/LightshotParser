@@ -16,7 +16,7 @@ def parser():
     while True:
         try:
             url=abcd()
-            user_agent_val="Mozilla/6.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36"
+            user_agent_val="Mozilla/6.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"
             r=get(url,headers={'User-Agent': user_agent_val})
             html=str(r.content)
             r=get(html[html.index("https://image.prntscr.com/image/"):html.index("https://image.prntscr.com/image/")+58],headers={"User-Agent": user_agent_val})
